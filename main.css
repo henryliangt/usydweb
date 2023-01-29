@@ -6,7 +6,14 @@ h1{
     font-family: Lantinghei SC;
     font-size: 40pt;
     color: #1D2088;
+
 }
+.container{
+    display: grid;
+
+}
+
+
 
 h2{
     font-family:Source Han Sans CN;
@@ -44,6 +51,7 @@ p{
     font-family: Source Han Sans CN;
     overflow: hidden;
     font-size:30pt;
+    float: contour;
 }
 .nav a{
     color: white;
@@ -76,6 +84,10 @@ p{
 .footer p{
     font-size: 10pt;
 }
+/*.footer img{*/
+/*    float: left;*/
+/*    width: 10%;*/
+/*}*/
 
 
 
