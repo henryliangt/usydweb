@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <title>SUCSA</title>
     <link rel = "stylesheet" href = "main.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel = "stylesheet" href = "navbar.css">
+    <link rel = "icon" type = "image/x-icon" href = "images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
-<div class = "bg"></div>
+
 <div class = "header">
     <h1> SUCSA </h1>
 </div>
 <div class = "container">
+<!--    <div class = "bg"></div>-->
 
-<!--<img class = "img" src = "logo.jpg" alt = "image">-->
-
-<div class = "nav">
+<div class = "nav" id = "topNav">
     <a class = "active" href = "main.html">主页</a>
     <a href = "event.html">活动</a>
     <a href = "joinsucsa.html">加入学联</a>
@@ -23,14 +26,38 @@
     <a href = "cooperation.html">合作方</a>
     <a href = "about.html">关于学联</a>
     <a href = "contact.html">联系方式</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </div>
+
+<script>
+    function navFunction() {
+    var x = document.getElementById("topNav");
+    if (x.className === "nav") {
+    x.className += " responsive";
+        } else {
+            x.className = "nav";
+}
+}
+</script>
+
+<!--<div class = "normal-text">-->
+<!--    <p>只因你太美</p>-->
+<!--</div>-->
+
+<div class = "video">
+    <video width= "700" height = "600" controls>
+        <source src = "pexels-tima-miroshnichenko-5377684.mp4" type = "video/mp4">
+    </video>
 </div>
 
 
 <div class = "footer">
     <p> SUCSA </p>
     <p> phone number:xxxxxxx</p>
-<!--    <img class = "img" src = "logo.jpg" alt = "image">-->
+
+</div>
 </div>
 </body>
 </html>
